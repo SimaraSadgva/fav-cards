@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Favorite cards</title>
+</head>
+<body  class="bg-gray-100 p-6">
+    <h1 class="text-pink-800 font-bold text-[30px] lg:text-[50px] text-center py-[60px] ">Add the best ones to favorites 🎔</h1>
+    <div id="card-animals" class="max-w-[1000px] m-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"></div>
+
+    <button id="open-wishlist" class="fixed right-4 top-4 bg-pink-800 hover:bg-pink-300 text-white px-4 py-2 rounded">Open Wishlist</button>
+
+    <div id="wishlist-sidebar" class="fixed right-0 top-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300">
+        <div class="p-4">
+            <div class="flex justify-between items-center">
+                <h2 class="text-xl font-semibold">Favorite cards</h2>
+                <button id="close-wishlist" class="text-pink-500"><i class="fas fa-times"></i></button>
+            </div>
+            <div id="wishlist-content" class="mt-4"></div>
+        </div>
+    </div>
+
+    <div class="text-center pt-[30px] font-bold text-pink-700">made by Simara 🎔</div>
+
+   
+    <script src="app.js"></script>
+</body>
+</html>
